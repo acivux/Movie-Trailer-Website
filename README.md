@@ -1,7 +1,7 @@
 ###Movie Trailer Website
 
 #####Installation
-- Download the files from https://github.com/acivux/Udacity/tree/master/ProjectA
+- Download the files from https://github.com/acivux/Movie-Trailer-Website
 - Copy all the project files into the same folder.
 - Run `entertainment_centre.py`
 
