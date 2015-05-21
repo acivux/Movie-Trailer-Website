@@ -1,5 +1,3 @@
-__author__ = 'jannie'
-
 import fresh_tomatoes
 from media import Movie
 
@@ -40,7 +38,3 @@ movies = [Movie(
 
 # Generate webpage
 fresh_tomatoes.open_movies_page(movies)
-
-
-
-

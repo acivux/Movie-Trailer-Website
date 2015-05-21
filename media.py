@@ -1,12 +1,11 @@
-__author__ = 'jannie'
-
 import webbrowser
 
 
 class Movie():
     """Class for storing movie information."""
 
-    # The values for this dictionary must match the CSS class names in the generated HTML
+    # The values for this dictionary must match the CSS class names in the
+    # generated HTML
     VALID_MPAA_RATINGS = {"G": "ribbon-green",
                           "PG": "ribbon-blue",
                           "PG-13": "ribbon-blue",
@@ -35,10 +34,12 @@ class Movie():
         """
 
         # MPAA rating is required
-        assert movie_mpaa_rating in self.VALID_MPAA_RATINGS.keys(), "MPAA rating missing or not correct: %s" % movie_title
+        assert movie_mpaa_rating in self.VALID_MPAA_RATINGS.keys(),\
+            "MPAA rating missing or not correct: %s" % movie_title
 
         # Viewer rating validation
-        assert 0 < movie_viewer_rating < 6, "Viewer rating must be between 1 and 5: %s" % movie_title
+        assert 0 < movie_viewer_rating < 6,\
+            "Viewer rating must be between 1 and 5: %s" % movie_title
 
         self.title = movie_title
         self.storyline = movie_storyline
